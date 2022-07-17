@@ -1,0 +1,16 @@
+header { 
+    background-color: hsl(179, 29%, 51%);
+    inline-size: 100%;
+    block-size: 15.5rem;
+}
+
+img { 
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+    object-position: top left;
+}
+
+
+ /*  */
