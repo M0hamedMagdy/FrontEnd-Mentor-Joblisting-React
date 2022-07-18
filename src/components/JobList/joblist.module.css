@@ -1,12 +1,16 @@
+@import '../../index.css';
+
+
 ul {
   padding: 16rem;
   padding-block-start: 6rem;
   padding-block-end: 0;
+  background-color: var(--Light-Grayish-Cyan-Background);
 }
 
 li {
+  background-color: var(--white) ;
   border-radius: 5px;
-  background-color: hsl(0, 0%, 100%);
   -webkit-box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.5);
   block-size: 15rem;
@@ -20,11 +24,15 @@ li {
 }
 
 li.featured {
-  border-left: blue 1px solid;
+  border-left: var(--Desaturated-Dark-Cyan) 3px solid;
 }
+
 li picture {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
+
 }
 
 li picture img {
@@ -49,30 +57,73 @@ li div.jobInfo {
 }
 
 li div.jobInfo h1 {
-  margin-block-start: 10px;
-  margin-block-end: 10px;
+  margin-block-start: 1.5rem;
+  margin-block-end: .5rem;
 }
+
+li div.jobInfo span { 
+  margin-inline-end: 0.8rem ;
+}
+
+li div.jobInfo span.companyName { 
+  color: var(--Desaturated-Dark-Cyan);
+  font-size: 1.5rem;
+}
+
+span.new {
+  padding: 0.8rem;
+  padding-block-end: 0.4rem;
+  background-color: var(--Desaturated-Dark-Cyan);
+  color: var(--white);
+  border-radius: 15px;
+  text-transform: uppercase;
+  
+}
+
+span.featured {
+  padding: 0.8rem;
+  padding-block-end: 0.4rem;
+  background-color: var(--Very-Dark-Grayish-Cyan);
+  color: var(--white);
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+li div.jobInfo div.dates { 
+  color: var(--Dark-Grayish-Cyan);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+li div.jobInfo div.dates span::after { 
+  content: ".";
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+li div.jobInfo div.dates span:last-child::after { 
+  content: "";
+}
+
+
+
 li div.tags {
   flex: 2;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
+
+
 li div.tags span {
-  padding: 3px;
-  margin-left: 10px;
-  background-color: aqua;
+  padding: 0.8rem;
+  margin-left: 1rem;
+  background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+  color: var(--Desaturated-Dark-Cyan);
   border-radius: 5px;
 }
 
-span.new {
-  padding: 2px;
-  background-color: blue;
-}
-
-span.featured {
-  padding: 2px;
-  background-color: red;
-}

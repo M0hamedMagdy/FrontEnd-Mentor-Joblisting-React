@@ -8,12 +8,12 @@ function Job({ job }) {
       </picture>
       <div className={styles.jobInfo}>
         <div>
-          <span>{job.company}</span>
-          {job.new && <span className={styles.new}>New</span>}
+          <span className={styles.companyName}>{job.company}</span>
+          {job.new && <span className={styles.new}>NEW!</span>}
           {job.featured && <span className={styles.featured}>Featured</span>}
         </div>
         <h1>{job.position}</h1>
-        <div>
+        <div className={styles.dates}>
           <span>{job.postedAt}</span>
           <span>{job.contract}</span>
           <span>{job.location}</span>
