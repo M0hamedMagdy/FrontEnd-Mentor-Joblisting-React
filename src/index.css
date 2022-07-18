@@ -26,10 +26,3 @@ body {
 }
 
 
-@media screen and (max-width: 750px) {
-
-  body,html { 
-    font-size: 9px;
-  }
-  }
-  

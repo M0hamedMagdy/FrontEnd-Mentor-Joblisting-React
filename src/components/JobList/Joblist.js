@@ -19,6 +19,7 @@ function Job({ job }) {
           <span>{job.location}</span>
         </div>
       </div>
+      <hr></hr>
       <div className={styles.tags}>
         <span>{job.role}</span>
 

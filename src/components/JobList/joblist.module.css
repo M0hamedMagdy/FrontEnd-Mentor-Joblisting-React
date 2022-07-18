@@ -70,6 +70,7 @@ li div.jobInfo span {
 li div.jobInfo span.companyName { 
   color: var(--Desaturated-Dark-Cyan);
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 span.new {
@@ -89,6 +90,10 @@ span.featured {
   color: var(--white);
   border-radius: 15px;
   text-transform: uppercase;
+}
+
+hr { 
+  display: none;
 }
 
 li div.jobInfo div.dates { 
@@ -165,18 +170,117 @@ li div.tags {
 
 
 @media screen and (max-width: 750px) {
-
-  li picture {
-    flex: 1;
-    margin-block-end: 1rem;
-    position: absolute;
-    top: -30px;
-    left: 20px;
+  ul {
+    padding-inline-start: 0rem;
+    padding-inline-end: 0rem;
   }
-  
+
+  li {
+    inline-size: 40rem;
+    block-size: 30rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
+  li picture { 
+    top: -30px;
+    left: 2px;
+  }
+    
   li picture img {
     display: block;
-    max-inline-size: 65%;
+    max-inline-size: 70%;
   }
+
   
+li div.jobInfo {
+  flex: 3;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-block-start: 2.8rem;
+  margin-inline-end: 11rem;
+}
+
+li div.jobInfo > * { 
+  margin-block-end: 0.99rem;
+} 
+
+
+li div.jobInfo h1 {
+  margin-block-end: 0.99rem;
+}
+
+li div.jobInfo span { 
+  margin-inline-end: 1.rem ;
+}
+
+li div.jobInfo span.companyName { 
+  font-size: 1.8rem;
+}
+
+span.new, span.featured {
+  padding: 0.9rem;
+  padding-block-end: 0.7rem;
+  font-size: 1.5rem;  
+}
+
+li div.jobInfo div.dates { 
+  inline-size: 110%;
+  flex-wrap: wrap ;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+li div.jobInfo div.dates span { 
+  font-size: 1.6rem;
+}
+
+
+li div.jobInfo div.dates span::after { 
+  content: ".";
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+hr { 
+  display: block;
+  inline-size: 95%;
+  background-color: var( --Dark-Grayish-Cyan);
+  margin-block-end: 1rem;
+}
+
+li div.tags {
+  
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+li div.tags span {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+}
+
+@media screen and (max-width: 415px) {
+
+  li {
+    inline-size: 32rem;
+    block-size: 30rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+
+  }
+
+    
+li div.jobInfo {
+  margin-block-start: 2.8rem;
+  margin-inline-end: 3rem;
+}
+
 }
