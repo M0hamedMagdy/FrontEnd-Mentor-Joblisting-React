@@ -1,13 +1,16 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 
-html , body { 
-    background-color: hsl(180, 52%, 96%);
-    inline-size: 100%;
-    block-size: 100vh;
-    font-size: 10px;
+html,
+body {
+  background-color: hsl(180, 52%, 96%);
+  inline-size: 100%;
+  block-size: 100vh;
+  font-size: 10px;
 }
-
