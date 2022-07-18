@@ -2,7 +2,7 @@ import styles from "./joblist.module.css";
 
 function Job({ job }) {
   return (
-    <li className={job.featured && `${styles.featured}`}>
+    <li key={job.id} className={job.featured ? styles.featured : styles.jobCard}>
       <picture>
         <img alt={job.company} src={job.logo}></img>
       </picture>
@@ -25,11 +25,11 @@ function Job({ job }) {
         <span>{job.level}</span>
 
         {job.languages.map((lang) => (
-          <span>{lang}</span>
+          <span key={lang}>{lang}</span>
         ))}
 
         {job.tools.map((tool) => (
-          <span>{tool}</span>
+          <span key={tool}>{tool}</span>
         ))}
       </div>
     </li>

@@ -1,0 +1,10 @@
+
+
+input { 
+    position: absolute;
+    left: 14rem;
+    top: 13rem;
+    inline-size: 80%;
+    block-size: 5rem;
+    
+}
