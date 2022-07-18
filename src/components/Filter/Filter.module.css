@@ -2,9 +2,22 @@
 
 input { 
     position: absolute;
-    left: 15.5rem;
+    left: 11%;
     top: 13rem;
+    
     inline-size: 78%;
-    block-size: 5rem;
+    block-size: 7rem;
+    
+    -webkit-box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
+    
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+    padding: 2rem;
+    font-size: 3rem;
     
 }
+
+  

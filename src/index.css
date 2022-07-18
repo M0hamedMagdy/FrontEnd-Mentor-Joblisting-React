@@ -24,3 +24,12 @@ body {
   block-size: 100vh;
   font-size: 10px;
 }
+
+
+@media screen and (max-width: 750px) {
+
+  body,html { 
+    font-size: 9px;
+  }
+  }
+  

@@ -17,6 +17,8 @@ li {
   list-style: none;
   margin-bottom: 2rem;
   padding: 2rem;
+  padding-inline-start: 1.2rem;
+  padding-inline-end: 1.2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,6 +34,7 @@ li picture {
   align-items: center;
   justify-content: center;
   flex: 1;
+  margin-inline-end: 0.4rem;
 
 }
 
@@ -40,7 +43,6 @@ li picture img {
   max-inline-size: 100%;
   block-size: auto;
   object-fit: cover;
-  object-position: top right;
 }
 
 span {
@@ -127,3 +129,54 @@ li div.tags span {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 1050px) {
+  li { 
+    flex-direction: column;
+    position: relative;
+    margin-block-start: 5rem;
+  }
+
+  
+li picture {
+  flex: 1;
+  margin-block-end: 1rem;
+  position: absolute;
+  top: -40px;
+  left: 20px;
+}
+
+li picture img {
+  display: block;
+  max-inline-size: 85%;
+}
+
+li div.jobInfo {
+  align-items: center;
+}
+
+li div.tags { 
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 0.9rem;
+}
+
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+  li picture {
+    flex: 1;
+    margin-block-end: 1rem;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+  }
+  
+  li picture img {
+    display: block;
+    max-inline-size: 65%;
+  }
+  
+}
