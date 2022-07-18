@@ -54,6 +54,17 @@ li div.jobInfo h1 {
 }
 li div.tags {
   flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+li div.tags span {
+  padding: 3px;
+  margin-left: 10px;
+  background-color: aqua;
+  border-radius: 5px;
 }
 
 span.new {
