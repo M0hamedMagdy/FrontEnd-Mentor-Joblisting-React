@@ -1,9 +1,8 @@
-import { useState } from 'react';
 import './Filter.module.css'
 
-function Filter() {
+function Filter({filterTags}) {
     return ( 
-        <input type="search" name="search" id="search" />
+        <input value={filterTags} type="search" name="search" id="search" />
     )
 }
 

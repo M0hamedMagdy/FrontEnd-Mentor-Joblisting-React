@@ -1,6 +1,6 @@
 import styles from "./joblist.module.css";
 
-function Job({ job }) {
+function Job({ job , handleTags }) {
   return (
     <li key={job.id} className={job.featured ? styles.featured : styles.jobCard}>
       <picture>
@@ -30,18 +30,18 @@ function Job({ job }) {
         ))}
 
         {job.tools.map((tool) => (
-          <span key={tool}>{tool}</span>
+          <span key={tool} onClick={handleTags}>{tool}</span>
         ))}
       </div>
     </li>
   );
 }
 
-function Joblist({ jobs }) {
+function Joblist({ jobs , handleTags , filterTags }) {
   return (
     <ul>
       {jobs.map((job) => (
-        <Job key={job.id} job={job} />
+        <Job key={job.id} job={job} handleTags={handleTags} />
       ))}
     </ul>
   );

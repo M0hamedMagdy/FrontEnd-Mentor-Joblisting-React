@@ -9,8 +9,9 @@ import Filter from "./components/Filter/Filter";
 
 
 function App() {
-  const [jobs, setJobs] = useState([]);  
- 
+  const [jobs, setJobs] = useState([]);
+  
+  const [filterTags , setFilterTags] = useState([]);
   function getJobs() { 
       jobService.getAll().then((allJobs) => {
         setJobs(allJobs)
@@ -19,11 +20,20 @@ function App() {
  
   useEffect(getJobs, []);
 
+  function handleTags(e) { 
+    const jobTags = [...filterTags , e.target.innerText]
+    setFilterTags(jobTags);
+
+    console.log('clicked', jobTags)
+    console.log(filterTags);
+    
+  }
   return (
     <>
       <Header src={bgImageDesktop} alt="backgroud image"/>
-      <Filter />
-      <Joblist jobs={jobs} />
+      { filterTags.length > 0 && <Filter filterTags={filterTags} />}
+      {}
+      <Joblist jobs={jobs} handleTags={handleTags} filterTags={filterTags} />
     </>
   );
 }
