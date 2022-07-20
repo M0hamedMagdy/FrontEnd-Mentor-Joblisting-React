@@ -1,6 +1,12 @@
+span.tag { 
+    background-color: var(--Light-Grayish-Cyan-Background-);
+    color: var(--Desaturated-Dark-Cyan);
+    padding: 0.8rem;
+    font-size: 1.3rem;
 
+}
 
-input { 
+div.filterTags { 
     position: absolute;
     left: 11%;
     top: 13rem;
@@ -11,13 +17,29 @@ input {
     -webkit-box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
     box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
     
-    outline: none;
-    border: none;
+    border: 1px solid white;
     border-radius: 10px;
+    background-color: var(--white);
 
     padding: 2rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
     
 }
 
+
+button.clear { 
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--Desaturated-Dark-Cyan);
+}
   

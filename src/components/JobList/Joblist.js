@@ -21,12 +21,12 @@ function Job({ job , handleTags }) {
       </div>
       <hr></hr>
       <div className={styles.tags}>
-        <span>{job.role}</span>
+        <span onClick={handleTags}>{job.role}</span>
 
-        <span>{job.level}</span>
+        <span onClick={handleTags}>{job.level}</span>
 
         {job.languages.map((lang) => (
-          <span key={lang}>{lang}</span>
+          <span onClick={handleTags} key={lang}>{lang}</span>
         ))}
 
         {job.tools.map((tool) => (

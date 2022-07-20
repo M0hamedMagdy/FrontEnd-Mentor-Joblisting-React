@@ -25,9 +25,13 @@ function App() {
     setFilterTags(jobTags);
 
     console.log('clicked', jobTags)
-    console.log(filterTags);
-    
+    console.log(filterTags);  
   }
+
+  // function clearTags() { }
+  // function removeTag() { }
+
+
   return (
     <>
       <Header src={bgImageDesktop} alt="backgroud image"/>
