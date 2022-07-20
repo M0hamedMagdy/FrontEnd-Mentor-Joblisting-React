@@ -45,11 +45,14 @@ function Job({ job, handleTags }) {
 }
 
 function Joblist({ jobs, handleTags, filterTags }) {
-  const res = jobs.filter((job) => filterTags.includes(job.role));
+  const filterdJobs = jobs.filter((job) => {
+    return job.role.includes(...filterTags);
+  });
+
   return (
     <ul>
-      {res.length > 0
-        ? res.map((job) => (
+      {filterdJobs.length > 0
+        ? filterdJobs.map((job) => (
             <Job key={job.id} job={job} handleTags={handleTags} />
           ))
         : jobs.map((job) => (

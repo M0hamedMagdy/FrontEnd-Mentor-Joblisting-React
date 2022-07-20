@@ -19,12 +19,11 @@ function App() {
   useEffect(getJobs, []);
 
   function handleTags(e) {
-    const jobTags = [...filterTags, e.target.innerText];
+    let jobTags = [...filterTags];
+    if (!jobTags.includes(e.target.innerText)) {
+      jobTags = [...filterTags, e.target.innerText];
+    }
     setFilterTags(jobTags);
-
-    console.log("clicked", jobTags);
-    console.log(filterTags);
-    console.log(e);
   }
 
   function clearTags(e) {
@@ -33,7 +32,6 @@ function App() {
   function removeTag(e) {
     const jobTags = filterTags.filter((tag) => tag !== e.target.value);
     setFilterTags(jobTags);
-    console.log(e);
   }
 
   return (

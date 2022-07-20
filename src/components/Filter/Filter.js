@@ -6,7 +6,7 @@ function FilterTag({ filterTags, removeTag }) {
       {filterTags.map((tag) => (
         <span key={tag} className={styles.tag}>
           {tag}
-          <button onClick={removeTag} value={tag}>
+          <button className={styles.remove} onClick={removeTag} value={tag}>
             X
           </button>
         </span>

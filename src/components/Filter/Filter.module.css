@@ -1,45 +1,50 @@
-span.tag { 
-    background-color: var(--Light-Grayish-Cyan-Background-);
-    color: var(--Desaturated-Dark-Cyan);
-    padding: 0.8rem;
-    font-size: 1.3rem;
-
+span.tag {
+  background-color: var(--Light-Grayish-Cyan-Background-);
+  color: var(--Desaturated-Dark-Cyan);
+  padding: 0.8rem;
+  padding-right: 0rem;
+  font-size: 1.3rem;
 }
 
-div.filterTags { 
-    position: absolute;
-    left: 11%;
-    top: 13rem;
-    
-    inline-size: 78%;
-    block-size: 7rem;
-    
-    -webkit-box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
-    
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: var(--white);
+div.filterTags {
+  position: absolute;
+  left: 11%;
+  top: 13rem;
 
-    padding: 2rem;
-    font-size: 1.5rem;
+  inline-size: 78%;
+  block-size: 7rem;
 
+  -webkit-box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 7px 20px -12px rgba(0, 0, 0, 0.6);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    
-    
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: var(--white);
+
+  padding: 2rem;
+  font-size: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-button.clear { 
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: var(--Desaturated-Dark-Cyan);
+button.remove {
+  background-color: var(--Dark-Grayish-Cyan);
+  border: none;
+  padding: 0.7rem;
+  margin-left: 0.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
 }
-  
+
+button.clear {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--Desaturated-Dark-Cyan);
+}

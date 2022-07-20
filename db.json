@@ -13,7 +13,7 @@
       "contract": "Full Time",
       "location": "USA Only",
       "languages": ["HTML", "CSS", "JavaScript"],
-      "tools": []
+      "tools": [] 
     },
     {
       "id": 2,
@@ -149,6 +149,7 @@
       "location": "Worldwide",
       "languages": ["JavaScript"],
       "tools": ["React", "Sass"]
+
     }
   ]
   
