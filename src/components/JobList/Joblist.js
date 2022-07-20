@@ -1,8 +1,11 @@
 import styles from "./joblist.module.css";
 
-function Job({ job , handleTags }) {
+function Job({ job, handleTags }) {
   return (
-    <li key={job.id} className={job.featured ? styles.featured : styles.jobCard}>
+    <li
+      key={job.id}
+      className={job.featured ? styles.featured : styles.jobCard}
+    >
       <picture>
         <img alt={job.company} src={job.logo}></img>
       </picture>
@@ -26,23 +29,32 @@ function Job({ job , handleTags }) {
         <span onClick={handleTags}>{job.level}</span>
 
         {job.languages.map((lang) => (
-          <span onClick={handleTags} key={lang}>{lang}</span>
+          <span onClick={handleTags} key={lang}>
+            {lang}
+          </span>
         ))}
 
         {job.tools.map((tool) => (
-          <span key={tool} onClick={handleTags}>{tool}</span>
+          <span key={tool} onClick={handleTags}>
+            {tool}
+          </span>
         ))}
       </div>
     </li>
   );
 }
 
-function Joblist({ jobs , handleTags , filterTags }) {
+function Joblist({ jobs, handleTags, filterTags }) {
+  const res = jobs.filter((job) => filterTags.includes(job.role));
   return (
     <ul>
-      {jobs.map((job) => (
-        <Job key={job.id} job={job} handleTags={handleTags} />
-      ))}
+      {res.length > 0
+        ? res.map((job) => (
+            <Job key={job.id} job={job} handleTags={handleTags} />
+          ))
+        : jobs.map((job) => (
+            <Job key={job.id} job={job} handleTags={handleTags} />
+          ))}
     </ul>
   );
 }
