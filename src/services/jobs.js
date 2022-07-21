@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const baseUrl = "http://localhost:3001/jobs";
+const baseUrl = "/api/jobs";
 
 
 function getAll() {
