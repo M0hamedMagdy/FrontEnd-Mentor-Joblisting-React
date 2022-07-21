@@ -13,7 +13,9 @@
       "contract": "Full Time",
       "location": "USA Only",
       "languages": ["HTML", "CSS", "JavaScript"],
-      "tools": [] 
+      "tools": [],
+      "tags": ["Frontend", "Senior", "HTML", "CSS", "JavaScript"]
+       
     },
     {
       "id": 2,
@@ -28,7 +30,9 @@
       "contract": "Part Time",
       "location": "Remote",
       "languages": ["Python"],
-      "tools": ["React"]
+      "tools": ["React"],
+      "tags": ["Fullstack", "Midweight", "Python", "React" ]
+
     },
     {
       "id": 3,
@@ -43,7 +47,9 @@
       "contract": "Part Time",
       "location": "USA Only",
       "languages": ["JavaScript"],
-      "tools": ["React", "Sass"]
+      "tools": ["React", "Sass"],
+      "tags": ["Frontend", "Junior", "JavaScript" ,"React", "Sass" ]
+
     },
     {
       "id": 4,
@@ -58,7 +64,9 @@
       "contract": "Contract",
       "location": "USA Only",
       "languages": ["CSS", "JavaScript"],
-      "tools": []
+      "tools": [],
+      "tags": ["Frontend", "Junior", "CSS", "JavaScript"  ]
+
     },
     {
       "id": 5,
@@ -73,7 +81,9 @@
       "contract": "Full Time",
       "location": "Worldwide",
       "languages": ["JavaScript"],
-      "tools": ["Ruby", "Sass"]
+      "tools": ["Ruby", "Sass"],
+      "tags": ["Fullstack","Midweight", "JavaScript", "Ruby", "Sass" ]
+
     },
     {
       "id": 6,
@@ -88,7 +98,10 @@
       "contract": "Full Time",
       "location": "UK Only",
       "languages": ["Ruby"],
-      "tools": ["RoR"]
+      "tools": ["RoR"],
+      "tags": ["Backend","Junior","Ruby", "RoR"  ]
+
+
     },
     {
       "id": 7,
@@ -103,7 +116,9 @@
       "contract": "Full Time",
       "location": "Worldwide",
       "languages": ["HTML", "JavaScript"],
-      "tools": ["Sass"]
+      "tools": ["Sass"],
+      "tags": ["Frontend", "Junior", "HTML", "JavaScript","Sass"]
+
     },
     {
       "id": 8,
@@ -118,7 +133,9 @@
       "contract": "Full Time",
       "location": "USA Only",
       "languages": ["JavaScript"],
-      "tools": ["Vue", "Sass"]
+      "tools": ["Vue", "Sass"],
+       "tags": ["Frontend", "Junior", "JavaScript", "Vue", "Sass"]
+
     },
     {
       "id": 9,
@@ -133,7 +150,9 @@
       "contract": "Full Time",
       "location": "Worldwide",
       "languages": ["JavaScript", "Python"],
-      "tools": ["Django"]
+      "tools": ["Django"],
+      "tags": ["Fullstack", "Midweight", "JavaScript", "Python", "Django"]
+
     },
     {
       "id": 10,
@@ -148,7 +167,9 @@
       "contract": "Part Time",
       "location": "Worldwide",
       "languages": ["JavaScript"],
-      "tools": ["React", "Sass"]
+      "tools": ["React", "Sass"],
+      "tags": ["Frontend", "Junior","JavaScript", "React", "Sass"]
+
 
     }
   ]

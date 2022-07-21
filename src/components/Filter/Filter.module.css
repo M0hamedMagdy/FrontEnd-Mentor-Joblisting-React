@@ -2,9 +2,13 @@ span.tag {
   background-color: var(--Light-Grayish-Cyan-Background-);
   color: var(--Desaturated-Dark-Cyan);
   padding: 0.8rem;
-  padding-right: 0rem;
+  padding-top: 0.5rem;
+  padding-right: 0.1rem;
   font-size: 1.3rem;
+  border-radius: 5px;
 }
+
+
 
 div.filterTags {
   position: absolute;
@@ -33,11 +37,17 @@ button.remove {
   background-color: var(--Dark-Grayish-Cyan);
   border: none;
   padding: 0.7rem;
-  margin-left: 0.7rem;
+  margin-left: 0.5rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--white);
+  border-radius: 5px;
+}
+
+button.remove:hover { 
+  background-color: var(--Very-Dark-Grayish-Cyan);
+  cursor: pointer;
 }
 
 button.clear {
@@ -47,4 +57,9 @@ button.clear {
   border: none;
   outline: none;
   color: var(--Desaturated-Dark-Cyan);
+}
+
+button.clear:hover { 
+  cursor: pointer;
+  border-bottom: 1px var(--Desaturated-Dark-Cyan) solid ;
 }

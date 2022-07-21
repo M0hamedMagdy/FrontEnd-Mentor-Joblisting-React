@@ -63,6 +63,14 @@ li div.jobInfo h1 {
   margin-block-end: .5rem;
 }
 
+li div.jobInfo h1:hover {
+  cursor: pointer;
+  color: var(--Desaturated-Dark-Cyan);
+
+}
+
+
+
 li div.jobInfo span { 
   margin-inline-end: 0.8rem ;
 }
@@ -132,6 +140,12 @@ li div.tags span {
   background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
   color: var(--Desaturated-Dark-Cyan);
   border-radius: 5px;
+}
+
+li div.tags span:hover {
+  cursor: pointer;
+  background-color: var(--Desaturated-Dark-Cyan);
+  color: var(--white);
 }
 
 @media screen and (max-width: 1050px) {

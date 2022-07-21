@@ -45,9 +45,9 @@ function Job({ job, handleTags }) {
 }
 
 function Joblist({ jobs, handleTags, filterTags }) {
-  const filterdJobs = jobs.filter((job) => {
-    return job.role.includes(...filterTags);
-  });
+
+  const filterdJobs = jobs.filter((job) => job.tags.includes(...filterTags))
+
 
   return (
     <ul>
