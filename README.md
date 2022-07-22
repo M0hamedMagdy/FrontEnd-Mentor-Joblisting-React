@@ -39,10 +39,9 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS Modules
 - [React](https://reactjs.org/) - JS library
 - [Axios](https://axios-http.com/docs/intro) - HTTP Client
-- [Styled Components](https://styled-components.com/) - For styles
 - [Expressjs](https://expressjs.com/) - Node.js web application framework
 - [Heroku](https://www.heroku.com) - Cloud Application Platformhttps
 
